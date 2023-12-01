@@ -1,0 +1,50 @@
+<!-- EMR Application - Key Pair Page
+By: Shiv Mangal, Isabella Smith and Julia Smith
+This page allows the user to generate the public-private key pair. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/emrcss.css">
+</head>
+
+<div class="header">
+    <h1> EMR Application </h1>
+</div>
+
+<!-- Header Bar (Used to move between different pages)-->
+<ul class = "bar">
+    <li class = "bar"><a href="/home"><b>Home</a></li>
+    <li class = "bar"><a href="/keypair">Create RSA Keypair</a></li>
+    <li class = "bar"><a href="/firstvisit">New Patient</a></li>
+    <li class = "bar"><a href="/patientvisit">Patient Visit</a></li>
+    <li class = "bar"><a href="/block">View Blockchain</a></li>
+  </ul>
+
+<!-- This Block of Code allows the user to enter a password. The HTML code will connect with the running python
+code and generate the public and private key. The resulting keys will be printed below the form.-->
+<h2>Please Enter A Password</h2><br><br>
+<div class="Welcome">
+    <form action="/keypair" method="post" class="patient">
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password"><br><br>
+        <input type="submit" value="Generate">
+    </form>
+    <div class="wrap">
+    <br/><br/>
+    <h2>Public Key</h2>
+    <br/>
+    <p>{{public}}</p>
+    <br/>
+    <h2>Private Key</h2>
+    <br/>
+    <p>{{private}}</p>
+    <br/><br/><br/><br/><br/><br/><br/>
+  </div> 
+</div>
+
+
+<div class="footer">
+  <p>By: Isabella Smith, Julia Smith and Shiv Mangal (2023)</p>
+</div>
