@@ -1,0 +1,122 @@
+/*
+EMR Application - CSS File
+By: Shiv Mangal, Isabella Smith and Julia Smith
+This code is for making the webpage look nice. In the html code, there are several classes (h2, bar, welcome, footer, etc.), and the css specifies its style
+For example, using this code, I can specify the size of some elements, their font, positioning, color, etc.
+Each html page links to this css file.
+*/
+
+div.header {
+    font-size: 18pt;
+    font-family: Arial, sans-serif;
+    height: 120px;
+    margin: 0;
+    text-align: center;
+    font-style: impact;
+    background-color: #30448c;
+    border-style: solid;
+    color: #FFFFFF;
+}
+
+ul.bar {
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+    margin: -5px 0;
+    padding: 0;
+    position: relative;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.bar {
+    background-color: #808080;
+    border-radius: 10px;
+    margin: 0 5px;
+    min-width: 200px;
+    display: inline-block;
+}
+
+li.bar a {
+    display: block;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+li.bar a:hover {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 25pt;
+    color: #0f887e;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: #363535;
+    margin-left: 70px;
+}
+
+div.welcome {
+    font-family: Arial, sans-serif;
+    margin-left: 70px;
+}
+
+div.footer {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+}
+
+form.patient {
+    margin-left: 70px;
+    margin-top: -40px;
+    color: #363535;
+    font-family: Arial, sans-serif;
+}
+
+form.patient label {
+    display: inline-block;
+    width: 160px;
+    margin-right: 10px;
+}
+
+form.patient input {
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    background-color: #0f887e;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 255px;
+    margin-bottom: 20px;
+}
+
+div.wrap{
+    word-wrap: break-word;
+}
+
+input[type="submit"]:hover {
+    background-color: #2ab3a1;
+}
