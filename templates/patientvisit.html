@@ -1,0 +1,67 @@
+<!-- EMR Application - New Patient Page
+By: Shiv Mangal, Isabella Smith and Julia Smith
+This page allows the user to add an entry to the blockchain when the patient visits the doctor. -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/emrcss.css">
+</head>
+
+
+<div class="header">
+    <h1> EMR Application </h1>
+</div>
+
+<!-- Header Bar (Used to move between different pages)-->
+<ul class = "bar">
+    <li class = "bar"><a href="/home"><b>Home</a></li>
+    <li class = "bar"><a href="/keypair">Create RSA Keypair</a></li>
+    <li class = "bar"><a href="/firstvisit">New Patient</a></li>
+    <li class = "bar"><a href="/patientvisit">Patient Visit</a></li>
+    <li class = "bar"><a href="/block">View Blockchain</a></li>
+  </ul>
+
+<div class="patient">
+    <h2>Patient Visit</h2>
+</div>
+<br/><br/><br/>
+
+<!-- Form to Grab Input from User.
+The resulting information will be stored in the blockchain in the application. -->
+<form action="/patientvisit" method="post" class="patient">
+    <label for="date">Appointment Date:</label>
+    <input type="text" id="date" name="date"><br><br>
+    <label for="time">Appointment Time:</label>
+    <input type="text" id="time" name="time"><br><br>
+    <label for="symptoms">Symptoms:</label>
+    <input type="text" id="symptoms" name="symptoms"><br><br>
+    <label for="diagnosis">Diagnosis:</label>
+    <input type="text" id="diagnosis" name="diagnosis"><br><br>
+    <label for="test">Tests Conducted:</label>
+    <input type="text" id="test" name="test"><br><br>
+    <label for="treatment">Treatment:</label>
+    <input type="text" id="treatment" name="treatment"><br><br>
+    <label for="medication">Medication:</label>
+    <input type="text" id="medication" name="medication"><br><br>
+    <label for="follow">Follow Up:</label>
+    <input type="text" id="follow" name="follow"><br><br>
+    <label for="notes">Additional Notes:</label>
+    <input type="text" id="notes" name="notes"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- This following block of code returns the digital signature from the python code and displays it on the webpage. -->
+<div class="wrap">
+<br><br>
+<h2>{{status}}</h2>
+<br/>
+<p>{{signature}}</p>
+<br/>
+</div>
+
+
+<div class="footer">
+    <p>By: Isabella Smith, Julia Smith and Shiv Mangal (2023)</p>
+</div>
